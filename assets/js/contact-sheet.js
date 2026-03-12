@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var payload = {
       first_name: form.querySelector('[name="name"]')?.value.trim() || "",
-      last_name:  form.querySelector('[name="l_name"]')?.value.trim() || "",
-      email:      form.querySelector('[name="email"]')?.value.trim() || "",
-      phone:      form.querySelector('[name="phone"]')?.value.trim() || "",
-      location:   form.querySelector('[name="preferred_location"]')?.value || "",
-      message:    form.querySelector('[name="message"]')?.value.trim() || ""
+      last_name: form.querySelector('[name="l_name"]')?.value.trim() || "",
+      email: form.querySelector('[name="email"]')?.value.trim() || "",
+      phone: form.querySelector('[name="phone"]')?.value.trim() || "",
+      location: form.querySelector('[name="preferred_location"]')?.value || "",
+      message: form.querySelector('[name="message"]')?.value.trim() || ""
     };
 
     fetch(GOOGLE_SCRIPT_URL, {
@@ -35,22 +35,22 @@ document.addEventListener("DOMContentLoaded", function () {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
     })
-    .then(function () {
-      if (response) {
-        response.textContent = "✅ Thank you! We'll get back to you shortly.";
-        response.style.color = "#2e7d32";
-      }
-      form.reset();
-      btn.textContent = "Send Message";
-      btn.disabled = false;
-    })
-    .catch(function () {
-      if (response) {
-        response.textContent = "❌ Something went wrong. Please try again or call us directly.";
-        response.style.color = "#b7124d";
-      }
-      btn.textContent = "Send Message";
-      btn.disabled = false;
-    });
+      .then(function () {
+        if (response) {
+          response.textContent = "✅ Thank you! We'll get back to you shortly.";
+          response.style.color = "#2e7d32";
+        }
+        form.reset();
+        btn.textContent = "Send Message";
+        btn.disabled = false;
+      })
+      .catch(function () {
+        if (response) {
+          response.textContent = "❌ Something went wrong. Please try again or call us directly.";
+          response.style.color = "#b7124d";
+        }
+        btn.textContent = "Send Message";
+        btn.disabled = false;
+      });
   });
 });
