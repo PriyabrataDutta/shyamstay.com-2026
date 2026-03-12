@@ -3,7 +3,7 @@
  * Replace YOUR_SCRIPT_URL with the deployed Apps Script Web App URL
  */
 
-const GOOGLE_SCRIPT_URL = "YOUR_SCRIPT_URL_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxGiQlfemupJVuB0oF7NpFXLLWn3PQ3zTmFOECdoEhW_s5jSCovPj7A2nTnQLp3-vQRRg/exec";
 
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("contact-form");
