@@ -1071,6 +1071,8 @@ input[type=color] {
   color: var(--tp-common-black);
   background: var(--tp-common-white);
   border-color: var(--tp-common-white);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 .tp-btn-2 {
   font-weight: 600;
@@ -2772,6 +2774,7 @@ input[type=color] {
   -ms-transition: all 0.3s 0s ease-out;
   -o-transition: all 0.3s 0s ease-out;
   transition: all 0.3s 0s ease-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-header-btn-wrap {
@@ -2781,6 +2784,8 @@ input[type=color] {
 .tp-header-btn:hover {
   color: var(--tp-common-white);
   background: var(--tp-theme-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(183, 18, 77, 0.3);
 }
 .tp-header-submit-btn {
   padding-right: 8px;
@@ -3131,11 +3136,27 @@ input[type=color] {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
+  position: relative;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.tp-main-menu nav ul li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--tp-theme-primary);
+  border-radius: 2px;
+  transition: width 0.3s ease-out;
+}
+.tp-main-menu nav ul li:hover > a::after,
+.tp-main-menu nav ul li.active > a::after {
+  width: 100%;
 }
 .tp-main-menu nav ul .tp-mega-menu {
   position: absolute;
@@ -4737,9 +4758,12 @@ input[type=color] {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   right: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 .tp-footer-input-btn:hover {
   background: #e7256b;
+  transform: translateY(calc(-50% - 3px));
+  box-shadow: 0 10px 20px rgba(231, 37, 107, 0.3);
 }
 .tp-footer-input-btn.footer-btn-2 {
   background: var(--tp-theme-2);
@@ -7133,10 +7157,14 @@ input[type=color] {
   line-height: 50px;
   border-radius: 50%;
   display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 .tp-place-btn a:hover {
   background: var(--tp-common-black);
   color: var(--tp-common-white);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(20, 20, 20, 0.3);
 }
 .tp-place-tab-btn {
   border: 1px solid #d7d7d7;

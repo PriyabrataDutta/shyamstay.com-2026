@@ -431,4 +431,20 @@
 	$('.select').niceSelect();
 	$('.tp-header-search-category select').niceSelect();
 
+	// Automatically add 'active' class to the current menu item
+	var currentUrl = window.location.pathname;
+	if (currentUrl === "" || currentUrl === "/") {
+		currentUrl = "/index.html";
+	}
+	$('.tp-main-menu nav ul li > a').each(function() {
+		var href = $(this).attr('href');
+		if (href) {
+			var absoluteHref = href.startsWith('/') ? href : '/' + href;
+			if (currentUrl.endsWith(absoluteHref)) {
+				$(this).closest('li').addClass('active');
+				$(this).parents('li').addClass('active');
+			}
+		}
+	});
+
 })(jQuery);
