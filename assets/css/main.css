@@ -3701,6 +3701,10 @@ input[type=color] {
 }
 .tp-postbox-big-thumb {
   height: 800px;
+  border-radius: 14px;
+}
+.tp-postbox-big-thumb img {
+  border-radius: 14px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-postbox-big-thumb {
@@ -4465,6 +4469,7 @@ input[type=color] {
   box-shadow: 0 20px 30px 6px rgba(20, 20, 20, 0.1);
   background: var(--tp-common-white);
   border: 1px solid transparent;
+  border-radius: 20px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -4479,8 +4484,10 @@ input[type=color] {
 }
 .tp-blog-thumb {
   overflow: hidden;
+  border-radius: 14px;
 }
 .tp-blog-thumb img {
+  border-radius: 14px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -4530,6 +4537,7 @@ input[type=color] {
 }
 .tp-blog-btn a {
   padding: 10px 20px;
+  border-radius: 30px;
 }
 .tp-blog-grid-wrapper {
   border-radius: 12px;
