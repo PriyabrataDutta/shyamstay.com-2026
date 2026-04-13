@@ -3399,7 +3399,7 @@ input[type=color] {
   padding: 0;
   font-size: 16px;
   font-weight: 500;
-  background-image: linear-gradient(#b7124d, #b7124d), linear-gradient(#b7124d, #b7124d);
+  background-image: linear-gradient(#255883, #255883), linear-gradient(#255883, #255883);
   background-size: 0 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -3412,7 +3412,7 @@ input[type=color] {
   color: var(--tp-common-black);
 }
 .tp-main-has-submenu .homemenu-title a:hover {
-  background-image: linear-gradient(#b7124d, #b7124d), linear-gradient(#b7124d, #b7124d);
+  background-image: linear-gradient(#255883, #255883), linear-gradient(#255883, #255883);
   background-size: 0 1px, 100% 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -3438,7 +3438,7 @@ input[type=color] {
   }
 }
 .tp-main-has-submenu-2 .homemenu-title a {
-  background-image: linear-gradient(#d59020, #d59020), linear-gradient(#d59020, #d59020);
+  background-image: linear-gradient(#fdd800, #fdd800), linear-gradient(#fdd800, #fdd800);
   background-size: 0 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -3451,7 +3451,7 @@ input[type=color] {
   color: var(--tp-common-black);
 }
 .tp-main-has-submenu-2 .homemenu-title a:hover {
-  background-image: linear-gradient(#d59020, #d59020), linear-gradient(#d59020, #d59020);
+  background-image: linear-gradient(#fdd800, #fdd800), linear-gradient(#fdd800, #fdd800);
   background-size: 0 1px, 100% 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -3909,7 +3909,7 @@ input[type=color] {
   border: none;
 }
 .tp-postbox-left-social-2 a:hover {
-  background: #d59020;
+  background: #fdd800;
   border: none;
 }
 .tp-postbox-left-social-3 {
@@ -4323,7 +4323,7 @@ input[type=color] {
   color: #9d9c9d;
 }
 .tp-postbox-comment-input .tp-input:focus {
-  border: 1px solid #b7124d;
+  border: 1px solid #255883;
 }
 .tp-postbox-comment-input select.tp-input {
   height: 50px;
@@ -4360,7 +4360,7 @@ input[type=color] {
   color: #9d9c9d;
 }
 .tp-postbox-comment-input .tp-textarea:focus {
-  border: 1px solid #b7124d;
+  border: 1px solid #255883;
 }
 .tp-postbox-comment-input .tp-checkbox {
   margin: 0;
@@ -4423,7 +4423,7 @@ input[type=color] {
   text-decoration-skip-ink: none;
 }
 .tp-postbox-comment-input .tp-agree a:hover {
-  color: #b7124d;
+  color: #255883;
 }
 .tp-postbox-comment-input-2 .tp-label {
   color: #2d1a0e;
@@ -4446,7 +4446,7 @@ input[type=color] {
   border-radius: 0;
 }
 .tp-postbox-comment-input-2 .tp-checkbox:checked {
-  background: #d59020;
+  background: #fdd800;
 }
 .tp-postbox-comment-input-2 .tp-agree {
   color: #5a5859;
@@ -4455,7 +4455,7 @@ input[type=color] {
   color: var(--tp-common-falured);
 }
 .tp-postbox-comment-input-2 .tp-postbox-comment-btn {
-  background: #d59020;
+  background: #fdd800;
   border-radius: 0;
 }
 .tp-postbox-comment-input-2 .tp-postbox-comment-btn:hover {
@@ -4659,7 +4659,7 @@ input[type=color] {
   display: inline-block;
 }
 .tp-post-cetagory-list ul li a:hover {
-  background: #b7124d1c;
+  background: rgba(37, 88, 131, 0.11);
   color: var(--tp-theme-primary);
   box-shadow: none;
 }
@@ -7062,7 +7062,7 @@ input[type=color] {
   margin-bottom: 3px;
 }
 .tp-contact-text a {
-  background-image: linear-gradient(#b7124d, #b7124d), linear-gradient(#b7124d, #b7124d);
+  background-image: linear-gradient(#255883, #255883), linear-gradient(#255883, #255883);
   background-size: 0 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -7074,7 +7074,7 @@ input[type=color] {
   transition: all 0.3s ease;
 }
 .tp-contact-text a:hover {
-  background-image: linear-gradient(#b7124d, #b7124d), linear-gradient(#b7124d, #b7124d);
+  background-image: linear-gradient(#255883, #255883), linear-gradient(#255883, #255883);
   background-size: 0 1px, 100% 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -8268,7 +8268,7 @@ input[type=color] {
   position: relative;
 }
 .tp-gallery-view span {
-  background-image: linear-gradient(#B7124D, #B7124D), linear-gradient(#B7124D, #B7124D);
+  background-image: linear-gradient(#255883, #255883), linear-gradient(#255883, #255883);
   background-size: 0 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -8281,7 +8281,7 @@ input[type=color] {
 }
 .tp-gallery-view span:hover {
   color: var(--tp-theme-primary);
-  background-image: linear-gradient(#B7124D, #B7124D), linear-gradient(#B7124D, #B7124D);
+  background-image: linear-gradient(#255883, #255883), linear-gradient(#255883, #255883);
   background-size: 0 1px, 100% 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
