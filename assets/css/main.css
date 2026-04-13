@@ -6317,6 +6317,7 @@ input[type=color] {
   padding-right: 185px;
   width: 100%;
   transform: translateX(-24px);
+  border-radius: 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-about-3-thumb {
@@ -6332,6 +6333,7 @@ input[type=color] {
   right: 0;
   position: absolute;
   bottom: -40px;
+  border-radius: 20px;
 }
 .tp-about-top-subtitle {
   font-family: var(--tp-ff-playfair);
@@ -12163,3 +12165,137 @@ p.checkout-coupon input[type=text]:focus {
   transform: scale(1.05);
 }
 /*# sourceMappingURL=main.css.map */
+
+/*----------------------------------------*/
+/*  Hero Scroller Section
+/*----------------------------------------*/
+.tp-hero-new {
+    background-color: #faf5ef;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.tp-hero-new-title {
+    color: #3A2318;
+    font-family: var(--tp-ff-playfair);
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.tp-hero-new-subtitle {
+    font-size: 22px;
+    color: #4a3831;
+    font-weight: 400;
+    font-family: var(--tp-ff-outfit, sans-serif);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.tp-hero-new-btn {
+    background-color: #3A2318;
+    color: #fff;
+    padding: 10px 10px 10px 32px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    font-family: var(--tp-ff-outfit, sans-serif);
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tp-hero-new-btn:hover {
+    background-color: #2c1a11;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(58, 35, 24, 0.2);
+    color: #fff;
+}
+.tp-hero-new-btn span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.12);
+}
+.hero-image-scroller-wrap {
+    position: relative;
+    margin-top: 50px;
+    padding-bottom: 0; 
+}
+.hero-image-scroller-wrap::before {
+    content: '';
+    position: absolute;
+    top: -250px;
+    left: -10%;
+    width: 120%;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #faf5ef;
+    z-index: 10;
+    pointer-events: none;
+}
+.hero-image-scroller-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: -250px;
+    left: -10%;
+    width: 120%;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 10;
+    pointer-events: none;
+}
+.hero-marquee-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.hero-marquee-track {
+    display: flex;
+    gap: 24px;
+    padding-right: 24px;
+    animation: scroll-marquee 20s linear infinite;
+    flex-shrink: 0;
+}
+.hero-marquee-track img {
+    height: 380px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+@keyframes scroll-marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 991px) {
+    .tp-hero-new-title {
+        font-size: 48px;
+    }
+}
+@media (max-width: 767px) {
+    .tp-hero-new-title {
+        font-size: 36px;
+    }
+    .tp-hero-new-subtitle {
+        font-size: 18px;
+    }
+    .hero-image-scroller-wrap::before {
+        top: -150px;
+        height: 200px;
+    }
+    .hero-image-scroller-wrap::after {
+        bottom: -200px;
+        height: 250px;
+    }
+    .hero-marquee-track img {
+        height: 280px;
+        width: 220px;
+    }
+}
