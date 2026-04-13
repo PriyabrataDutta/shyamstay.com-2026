@@ -148,22 +148,22 @@ li,
   @color declaration
   */
   --tp-common-white: #ffffff;
-  --tp-common-white2: #faf5ef;
+  --tp-common-white2: #fafafa;
   --tp-common-black: #141414;
-  --tp-common-yellow: #ffeb38;
-  --tp-common-yellow2: #ffd084;
+  --tp-common-yellow: var(--pd-shyam-light-yellow);
+  --tp-common-yellow2: var(--pd-shyam-deep-yellow);
   --tp-common-black2: #19163c;
   --tp-common-black3: #180d06;
   --tp-common-black4: #2d1a0e;
-  --tp-common-falured: #a05916;
+  --tp-common-falured: #d4ac0d;
   --tp-grey-1: #5A5859;
   --tp-grey-2: #c7c7c7;
   --tp-grey-3: #9d9d9d;
   --tp-grey-4: #595654;
   --tp-grey-5: #635c57;
-  --tp-theme-primary: #B7124D;
-  --tp-theme-1: #761f0e;
-  --tp-theme-2: #d59020;
+  --tp-theme-primary: var(--pd-shyam-deep-blue);
+  --tp-theme-1: #1e4769;
+  --tp-theme-2: var(--pd-shyam-deep-yellow);
   --pd-shyam-deep-blue: #255883;
   --pd-shyam-light-blue : #b0c8e2;
   --pd-shyam-light-yellow : #ffdf59;
