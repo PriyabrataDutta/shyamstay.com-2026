@@ -14633,3 +14633,51 @@ p.checkout-coupon input[type=text]:focus {
     width: 200px;
   }
 }
+
+/* ============================================================
+   BLOG PAGES — Hide dummy/placeholder content
+   Hides: fake comments, dummy author, prev/next placeholders,
+          generic tags, and the entire sidebar widget column.
+   ============================================================ */
+
+/* Hide the entire sidebar column */
+.tp-postbox-area .col-lg-4.pb-50 {
+  display: none !important;
+}
+
+/* Make the blog content full-width now that sidebar is gone */
+.tp-postbox-area .col-lg-8.mb-40 {
+  width: 100% !important;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Hide dummy comments section (names like Chigusa Kisa, Nicolas Bryant) */
+.tp-postbox-comment-wrapper {
+  display: none !important;
+}
+
+/* Hide comment/leave-a-comment form */
+.tp-postbox-comment-form {
+  display: none !important;
+}
+
+/* Hide dummy author bio box (Alison Baker) */
+.tp-postbox-author {
+  display: none !important;
+}
+
+/* Hide Previous / Next post navigation with dummy titles */
+.tp-postbox-more-navigation {
+  display: none !important;
+}
+
+/* Hide the generic tag cloud on post share row (Education, Life Style, React etc) */
+.tp-postbox-share-wrapper .tagcloud-details {
+  display: none !important;
+}
+
+/* Hide the "0 Comments" meta text in breadcrumb */
+.tp-breadcrumb-blog-meta span:last-child {
+  display: none !important;
+}
