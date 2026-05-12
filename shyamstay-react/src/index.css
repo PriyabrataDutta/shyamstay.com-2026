@@ -1,0 +1,9 @@
+/* Global React Styles */
+:root {
+  --primary-color: #255883;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
