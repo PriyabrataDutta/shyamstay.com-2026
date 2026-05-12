@@ -317,6 +317,12 @@ button:focus {
   border-radius: 6px;
 }
 
+/* About section image rounded corners */
+.tp-about-3-thumb {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
