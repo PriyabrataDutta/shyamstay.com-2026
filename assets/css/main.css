@@ -7520,8 +7520,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tp-about-3-thumb {
-  padding-right: 185px;
-  width: 100%;
+  width: calc(100% - 185px);
+  margin-right: 185px;
   transform: translateX(-24px);
   border-radius: 20px;
 }
@@ -7536,7 +7536,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 @media (max-width: 575px) {
   .tp-about-3-thumb {
-    padding-right: 0;
+    width: 100%;
+    margin-right: 0;
   }
 }
 
